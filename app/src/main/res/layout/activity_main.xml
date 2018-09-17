@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Team A"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Goals:"
+                        android:padding="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/textGoalA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:paddingLeft="36dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Corners:"
+                        android:padding="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/textCornerA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:paddingLeft="25dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yellow Card:"
+                        android:padding="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/textYelloCardA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Red Card:"
+                        android:padding="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/textRedCardA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:paddingLeft="17dp"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonGoalA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Goal"
+                    android:onClick="goal"
+                    android:tag="A"
+                    />
+
+                <Button
+                    android:id="@+id/buttonCornerA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Corner"
+                    android:onClick="corner"
+                    android:tag="A"/>
+
+                <Button
+                    android:id="@+id/buttonYelloCardA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="yellow"
+                    android:tag="A"
+                    android:text="Yello Card" />
+
+                <Button
+                    android:id="@+id/buttonRedCardA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="red"
+                    android:tag="A"
+                    android:text="Red Card" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="?android:attr/listDivider" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Team B"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Goals:"
+                        android:padding="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/textGoalB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:paddingLeft="36dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Corners:"
+                        android:padding="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/textCornerB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:paddingLeft="25dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yellow Card:"
+                        android:padding="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/textYelloCardB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Red Card:"
+                        android:padding="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/textRedCardB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:paddingLeft="17dp"
+
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonGoalB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="goal"
+                    android:text="Goal"
+                    android:tag="B"
+                    />
+
+                <Button
+                    android:id="@+id/buttonCornerB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Corner"
+                    android:onClick="corner"
+                    android:tag="B"
+                    />
+
+                <Button
+                    android:id="@+id/buttonYelloCardB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="yellow"
+                    android:tag="B"
+                    android:text="Yello Card" />
+
+                <Button
+                    android:id="@+id/buttonRedCardB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="red"
+                    android:tag="B"
+                    android:text="Red Card" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="?android:attr/listDivider" /-->
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="reset"
+            android:text="Reset" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
